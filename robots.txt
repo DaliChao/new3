@@ -1,0 +1,4 @@
+Sitemap: https://rowatinsurance.com/sitemap.xml
+
+User-agent: *
+Disallow: 

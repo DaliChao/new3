@@ -1,0 +1,36 @@
+<script type='application/ld+json'>
+  {
+    "@context": "http://www.schema.org",
+    "@type": "Organization",
+    "name": "Rowat Insurance",
+    "url": "{{ site.url }}",
+    "email":"mailto:{{ site.email }}",
+    "logo": "{{ site.url }}{% asset_path logos/logo-800x320.jpg %}",
+    "image": "{{ site.url }}{% asset_path logos/og-home.jpg %}",
+    "description": "Since 1955, Rowat Insurance has provided Ontario & Quebec with reliable home, auto, business, and life insurance coverage. Get a quote from a registered broker.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "266 Beechwood Ave, Suite 202",
+      "addressLocality": "Ottawa",
+      "addressRegion": "ON",
+      "postalCode": "K1L 8A6",
+      "addressCountry": "Canada"
+    },
+    "telephone": "+1-613-747-9737",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-613-747-9737",
+      "contactType": "customer support",
+      "areaServed": "CA",
+      "availableLanguage": [
+        "English", 
+        "French"
+      ]
+    },
+    "sameAs": [ 
+      "{{ site.data.links.twitter }}",
+      "{{ site.data.links.facebook }}",
+      "{{ site.data.links.google }}"
+    ]
+  }
+</script>

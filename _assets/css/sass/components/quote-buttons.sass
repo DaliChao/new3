@@ -1,0 +1,57 @@
+.quote-button
+  display: block
+  width: 100%
+  margin: 10px auto
+  padding: 1.5rem 0
+  border-radius: $border-radius
+  transition: all .5s cubic-bezier(.645, .045, .355, 1)
+  color: $white
+  opacity: 1
+  text-align: center
+  cursor: pointer
+  font-size: 25px
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, .8), 1px 1px 6px rgba(0, 0, 0, .8)
+  background-size: cover
+  background-position: center
+  background-color: $bluegrey
+
+  &:hover
+    color: $white
+    opacity: .7
+    transform: scale(1.01)
+
+  +desktop
+    padding: 80px 0
+
+  &.cottage.lazyloaded
+    +tablet
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(asset_path("cottage-insurance-460.jpg"))
+
+  &.home.lazyloaded
+    +tablet
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(asset_path("home-insurance-460.jpg"))
+
+  &.auto.lazyloaded
+    +tablet
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(asset_path("auto-insurance-460.jpg"))
+
+  &.commercial.lazyloaded
+    +tablet
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(asset_path("commercial-insurance-460.jpg"))
+
+  &.life.lazyloaded
+    +tablet
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(asset_path("life-insurance-460.jpg"))
+
+  &.health.lazyloaded
+    +tablet
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(asset_path("health-insurance-460.jpg"))
+
+  &.retirement.lazyloaded
+    +tablet
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(asset_path("retirement-460.jpg"))
+
+  & h3
+    margin-top: 10px
+    font-size: 25px
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, .8)

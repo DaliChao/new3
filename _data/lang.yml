@@ -1,0 +1,196 @@
+# Home link on the logo in the header and footer
+h:
+  English: "/"
+  Français: "/fr/accueil"
+
+# Main menus in the header and footer, only for quote and contact links
+m:
+  English:
+    quote:
+      name: "Get a Quote"
+      url: "/get-a-quote"
+    contact-page:
+      name: "Contact us"
+      url: "/contact-us"
+  Français:
+    quote:
+      name: "Obtenez une soumission"
+      url: "/fr/obtenez-une-soumission"
+    contact-page:
+      name: "Contactez-nous"
+      url: "/fr/contactez-nous"
+
+# Quote page
+y:
+  English: "Find the right coverage for you and your family"
+  Français: "Trouvez la bonne couverture pour vous et votre famille"
+
+# Quote buttons on the home pages and get-a-quote pages
+q:
+  English:
+    home:
+      text: "Home Insurance"
+      url: "https://webrater.appliedsystems.com/WR/Default.aspx?GC=INGFHRI&LOB=PROP&LANG=EN"
+    auto:
+      text: "Auto Insurance"
+      url: "https://webrater.appliedsystems.com/WR/Default.aspx?GC=INGFHRI&LOB=AUTO&LANG=EN"
+    cottage:
+      text: "Cottage Insurance"
+      url: "/cottage-and-seasonal-insurance"
+    commercial:
+      text: "Commercial Insurance"
+      url: "/commercial-insurance"
+    life:
+      text: "Life Insurance"
+      url: "http://boulos.net/life-insurance-quotes/"
+    health:
+      text: "Health Insurance"
+      url: "http://boulos.net/health-insurance-quotes/"
+    retirement:
+      text: "Retirement Advice"
+      url: "http://boulos.net/retirement-quotes/"
+  Français:
+    home:
+      text: "Assurance habitation"
+      url: "https://webrater.appliedsystems.com/WR/Default.aspx?GC=INGFHRI&LOB=PROP&LANG=FR"
+    auto:
+      text: "Assurance auto"
+      url: "https://webrater.appliedsystems.com/WR/Default.aspx?GC=INGFHRI&LOB=AUTO&LANG=FR"
+    cottage:
+      text: "Assurance saisonnière"
+      url: "/fr/chalet-et-saisonniere"
+    commercial:
+      text: "Assurance commerciale"
+      url: "/fr/assurance-commerciale"
+    life:
+      text: "Assurance vie"
+      url: "http://boulos.net/cotations-dassurance-vie/?lang=fr"
+    health:
+      text: "Assurance santé"
+      url: "http://boulos.net/cotations-dassurance-sante/?lang=fr"
+    retirement:
+      text: "Cotations de retraite"
+      url: "http://boulos.net/cotations-de-retraite/?lang=fr"
+
+# Partners logos
+p:
+  English: "Our trusted partners"
+  Français: "Nos partenaires de confiance"
+
+# CTA banner to quote page
+c:
+  English:
+    cta:
+      button: "Get a Quote"
+      text: "or call us "
+      url: "/get-a-quote"
+  Français:
+    cta:
+      button: "Obtenez une soumission"
+      text: "ou appelez-nous au "
+      url: "/fr/obtenez-une-soumission"
+
+# Author info widget at the bottom of each blog post
+a:
+  English:
+    bio:
+      title: "Rowat Insurance"
+      text: "Insuring Ontario and Quebec since 1955. Trust Rowat Insurance Brokers to look after your home, auto, business and life insurance needs. We always guarantee fast, friendly service and highly competitive premiums. As brokers, we are entirely independent from Insurers and Financial Institutions; we will work with you to analyze and advise on risk, and customize the coverage that is right for you."
+  Français:
+    bio:
+      title: "Courtiers d'assurance Rowat"
+      text: "Assureurs en Ontario et le Québec depuis 1955. Faites confiance aux courtiers d'assurance Rowat pour s'occuper de vos besoins en assurance habitation, automobile, commercial et assurance-vie. Nous garantissons toujours un service rapide et amical et des primes très compétitives. En tant que courtiers, nous sommes entièrement indépendants des assureurs et des institutions financières; nous travaillerons avec vous pour analyser et conseiller sur les risques, et personnaliser la couverture qui vous convient le mieux."
+
+# Office locations in the footer
+z:
+  English: "Five locations to serve you."
+  Français: "Cinq succursales pour vous servir."
+
+f:
+  English:
+    east:
+      button: "Ottawa East"
+      address: "266 Beechwood Ave"
+      url: "/locations/on/ottawa-east"
+    west:
+      button: "Ottawa West"
+      address: "1433 Wellington St W"
+      url: "/locations/on/ottawa-west"
+    gatineau:
+      button: "Gatineau"
+      address: "216 Ch d'Aylmer"
+      url: "/locations/qc/gatineau"
+    shawville:
+      button: "Shawville"
+      address: "391 Main Street"
+      url: "/locations/qc/shawville"
+    mansfield:
+      button: "Mansfield"
+      address: "175A de la Chute"
+      url: "/locations/qc/mansfield"
+  Français:
+    east:
+      button: "Ottawa est"
+      address: "266 Beechwood"
+      url: "/fr/succursales/on/ottawa-est"
+    west:
+      button: "Ottawa ouest"
+      address: "1433 rue Wellington O"
+      url: "/fr/succursales/on/ottawa-ouest"
+    gatineau:
+      button: "Gatineau"
+      address: "216 Ch d&#x27;Aylmer"
+      url: "/fr/succursales/qc/gatineau"
+    shawville:
+      button: "Shawville"
+      address: "391 rue Main"
+      url: "/fr/succursales/qc/shawville"
+    mansfield:
+      button: "Mansfield"
+      address: "175A de la Chute"
+      url: "/fr/succursales/qc/mansfield"
+
+# Office location pages
+l:
+  English:
+    labels:
+      address: "Address"
+      phone: "Phone"
+      hours: "Office Hours"
+    days:
+      mon: "Monday"
+      tue: "Tuesday"
+      wed: "Wednesday"
+      thu: "Thursday"
+      fri: "Friday"
+      sat: "Saturday"
+      sun: "Sunday"
+    button:
+      auto:
+        text: "Get an auto insurance quote"
+        url: "https://webrater.appliedsystems.com/WR/Default.aspx?GC=INGFHRI&LOB=AUTO&LANG=EN"
+      home:
+        text: "Get a property insurance quote"
+        url: "https://webrater.appliedsystems.com/WR/Default.aspx?GC=INGFHRI&LOB=PROP&LANG=EN"
+    blog: "Learn more about..."
+  Français:
+    labels:
+      address: "Adresse"
+      phone: "Téléphone"
+      hours: "Heures d'ouverture"
+    days:
+      mon: "lundi"
+      tue: "mardi"
+      wed: "mercredi"
+      thu: "jeudi"
+      fri: "vendredi"
+      sat: "samedi"
+      sun: "dimanche"
+    button:
+      auto:
+        text: "Obtenez une soumission d'automobile"
+        url: "https://webrater.appliedsystems.com/WR/Default.aspx?GC=INGFHRI&LOB=AUTO&LANG=FR"
+      home:
+        text: "Obtenez une soumission d'habitation"
+        url: "https://webrater.appliedsystems.com/WR/Default.aspx?GC=INGFHRI&LOB=PROP&LANG=FR"
+    blog: "Apprenez d'avantage"

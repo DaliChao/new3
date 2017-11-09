@@ -1,0 +1,145 @@
+---
+layout: default
+---
+
+{% include header.html %}
+<div class="location">
+  <div class="page-hero {{ page.ref }}">
+    <div class="container">
+      <h1 class="hero-heading">{{ page.heading }}</h1>
+    </div>
+  </div>
+  <div class="main-section">
+    <div class="container">
+      <h2 class="section-title">{{ page.tagline }}</h2>
+      <div class="med-divider"></div>
+      <div class="row">
+        <div class="co-ordinates col col-5 col-small-6">
+          <div>
+            <h3>
+              {{ site.data.lang.l[page.lang].labels.address }}
+            </h3>
+            <address>
+              {{ page.address }}<br>
+              {{ page.locality }}{% if page.lang == 'English' %},{% endif %} {% if page.lang == 'Français' %}({% endif %}{{ page.region }}{% if page.lang == 'Français' %}){% endif %} {{ page.postal }}
+            </address>
+          </div>
+          <div>
+            <h3>
+                {{ site.data.lang.l[page.lang].labels.phone }}
+            </h3>
+            <div>
+              t: <a href="{{ page.phone | remove: '(' | remove: ') ' | remove: '-' | prepend: 'tel:+1' }}">{{ page.phone }}</a><br>
+              f: {{ page.fax }}
+            </div>
+          </div>
+          <div>
+            <h3>
+                {{ site.data.lang.l[page.lang].labels.hours }}
+            </h3>
+            <div>              
+              <div style="max-width: 250px;">
+                <table width="100%">
+                  <tr>
+                    <td>{{ site.data.lang.l[page.lang].days.mon }}:</td>
+                    <td align="right">{{ page.hours }}</td>
+                  </tr>
+                  <tr>
+                    <td>{{ site.data.lang.l[page.lang].days.tue }}:</td>
+                    <td align="right">{{ page.hours }}</td>
+                  </tr>
+                  <tr>
+                    <td>{{ site.data.lang.l[page.lang].days.wed }}:</td>
+                    <td align="right">{{ page.hours }}</td>
+                  </tr>
+                  <tr>
+                    <td>{{ site.data.lang.l[page.lang].days.thu }}:</td>
+                    <td align="right">{{ page.hours }}</td>
+                  </tr>
+                  <tr>
+                    <td>{{ site.data.lang.l[page.lang].days.fri }}:</td>
+                    <td align="right">{{ page.hours }}</td>
+                  </tr>
+                  <tr>
+                    <td>{{ site.data.lang.l[page.lang].days.sat }}:</td>
+                    <td align="right">
+                      {% if page.lang == 'English' %}
+                        Closed
+                      {% endif %}
+                      {% if page.lang == 'Français' %}
+                        fermé
+                      {% endif %}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>{{ site.data.lang.l[page.lang].days.sun }}:</td>
+                    <td align="right">
+                      {% if page.lang == 'English' %}
+                        Closed
+                      {% endif %}
+                      {% if page.lang == 'Français' %}
+                        fermé
+                      {% endif %}
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <a
+            href="{{ site.data.lang.l[page.lang].button.auto.url }}"
+            class="button dark"
+          >
+            {{ site.data.lang.l[page.lang].button.auto.text }}
+          </a>
+          <a
+            href="{{ site.data.lang.l[page.lang].button.home.url }}"
+            class="button dark"
+          >
+            {{ site.data.lang.l[page.lang].button.home.text }}
+          </a>
+        </div>
+        <div class="col col-7 col-small-6">
+          <div id="map" class="map"></div>
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-section">
+    <div class="container">
+      <h2 class="section-title">
+        {{ site.data.lang.l[page.lang].blog }}
+      </h2>
+      <div class="med-divider"></div>
+      {% include blog/blog-widget.html %}
+    </div>
+  </div>
+</div>
+{% include footer.html %}
+
+{% capture lat %}
+  {{ page.lat }}
+{% endcapture %}
+{% capture lng %}
+  {{ page.lng }}
+{% endcapture %}
+
+<script>
+  function initMap() {
+    var uluru = { 
+      lat: {{ lat | strip_newlines }},
+      lng: {{ lng | strip_newlines }} 
+    };
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 13,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATOp4L8-h8XygHCegrtwq1_te5atB6_uo&callback=initMap">
+</script>

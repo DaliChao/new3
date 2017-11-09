@@ -1,0 +1,41 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{% if page.lang == 'English' %}en-CA{% endif %}{% if page.lang == 'Français' %}fr-CA{% endif %}">
+
+  {% include head.html %}
+
+  <body>
+    
+    {{ content }}
+
+    {% unless page.layout == 'post' %}
+    {% include meta/schema/insurance-agency.html %}
+    {% endunless %}
+
+    {% if page.layout == 'post' %}
+    {% include meta/schema/blog-post.html %}
+    {% endif %}
+
+    {% js vendor/lazysizes.min %}
+    {% js app %}
+
+    {% if page.ref == 'homepage' and page.lang == 'English' %}
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+    {% endif %}
+    
+  </body>
+
+</html>

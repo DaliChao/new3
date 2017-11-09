@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: pamelahicks/rowat-insurance
+  branch: master
+media_folder: "blog-images"
+collections:
+- name: "blog" # Used in routes, e.g., /admin/collections/blog
+  label: "Blog Posts" # Used in the UI
+  folder: "_posts/blog" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  fields: # front matter
+    - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Language", name: "lang", widget: "select", options: ['', 'English', 'Français']}
+    - {label: "Category", name: "category", widget: "select", options: ['', 'Auto Insurance', 'Commercial Insurance', 'Expert Tips', 'Family Matters', 'Home Insurance', 'Identity Theft', 'Insurance Brokers', 'Life Insurance', 'Safety Tips', 'Tenant Insurance', 'Winter Safety']}
+    - {label: "Image", name: "image", widget: "image"}
+    - {label: "Excerpt", name: "excerpt", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
+    - {label: "Ref", name: "ref", widget: "hidden", default: ":image"}
+    - {label: "Publish Date", name: "date", widget: "datetime"}
+    - {label: "Permalink", name: "permalink", widget: "hidden", default: "/blog/:slug"}

@@ -1,0 +1,35 @@
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}{{ page.url }}"
+    },
+    "headline": "{{ page.title }}",
+    "image": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}{{ page.image }}",
+      "height": 463,
+      "width": 700
+    },
+    "datePublished": "{{ page.date }}",
+    "dateModified": "{{ page.date }}",
+    "author": {
+      "@type": "Person",
+      "name": "Rowat Insurance"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Rowat Insurance",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}{% asset_path logos/schema-logo-600x60.png %}",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "{{ page.excerpt }}",
+    "articleBody": "{{ content | strip_html | strip_newlines | truncate: 2000 }}"
+  }
+</script>

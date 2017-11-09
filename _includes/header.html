@@ -1,0 +1,65 @@
+<header>
+  <div class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a 
+          href="{{ site.data.lang.h[page.lang] }}"
+          rel="Home" 
+          alt="Assurance Rowat Insurance logo"
+        >
+          <picture>
+            <source 
+              srcset="{% asset_path logos/logo-white-180.png %} 180w, {% asset_path logos/logo-white-180-hi.png %} 360w" 
+              media="(min-width: 992px)"
+            >
+            <source 
+              srcset="{% asset_path logos/logo-white-160.png %} 160w, {% asset_path logos/logo-white-160-hi.png %} 320w" 
+              media="(min-width: 768px)"
+            >
+            <img 
+              srcset="{% asset_path logos/logo-white-120.png %} 120w, {% asset_path logos/logo-white-120-hi.png %} 240w"
+              src="{% asset_path logos/logo-white-180-hi.png %}"
+              alt="Assurance Rowat Insurance logo" 
+            />
+          </picture>
+        </a>
+      </div>
+      <nav role="navigation" id="mobileNav" class="nav">
+        <a href="javascript:void(0)" class="close-x" onclick="closeNav()">×</a>
+        <div class="menu-items">
+          <a
+            href="tel:+16137479737"
+            class="nav-link"
+            onclick="ga('send', 'event', { eventCategory: 'phone call', eventAction: 'tap', eventLabel: 'phone number in header {{ page.lang }}', eventValue: 10});"
+          >
+            (613) 747-9737
+          </a>
+  
+          {% for menu in site.data.lang.m[page.lang] %}
+          <a href="{{ menu[1].url }}" class="nav-link">
+            {{ menu[1].name }}
+          </a>
+          {% endfor %}
+  
+          {% assign links = site.posts | where:"ref", page.ref | sort: 'lang' %}
+          {% for link in links %}
+          <a href="{{ link.url }}" class="nav-link{% if page.url == link.url %} active{% endif %}">
+            {{ link.lang }}
+          </a>
+          {% endfor %}
+          
+          {% assign links = site.pages | where:"ref", page.ref | sort: 'lang' %}
+          {% for link in links %}
+          <a href="{{ link.url }}" class="nav-link{% if page.url == link.url %} active{% endif %}">
+            {{ link.lang }}
+          </a>
+          {% endfor %}
+        </div>
+      </nav>
+      <div class="nav-button" onclick="openNav()">
+        <div class="menu-link">MENU</div>
+        <div class="menu-icon">&#9776;</div>
+      </div>
+    </div>
+  </div>
+</header>

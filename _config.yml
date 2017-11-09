@@ -1,0 +1,40 @@
+title: "Ottawa Insurance Broker | Rowat Insurance"
+email: "info@fhrowat.com"
+description: "Since 1955, Rowat Insurance has provided Ontario & Quebec with reliable home, auto, business, and life insurance coverage. Get a quote from a registered broker:"
+url: "https://rowatinsurance.com"
+
+# Build settings
+livereload: true
+markdown: kramdown
+include: ["_pages", "_redirects"]
+plugins:
+  - jekyll-feed
+  - jekyll-assets
+
+assets:
+  assets:
+    - "*.png"
+    - "*.jpg"
+    - "*.jpeg"
+    - "*.gif"
+    - "*.svg"
+    - "*.webp"
+  caching:
+    enabled: true
+    path: ".asset-cache/assets"
+    type: file
+  autoprefixer:
+    browsers:
+      - "last 2 versions"
+      - "IE > 9"
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: [""]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]

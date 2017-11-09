@@ -1,0 +1,38 @@
+<script type='application/ld+json'> 
+  {
+    "@context": "http://www.schema.org",
+    "@type": "InsuranceAgency",
+    "name": "Rowat Insurance",
+    "url": "{{ site.url }}{{ page.url }}",
+    "email":"mailto:{{ site.email }}",
+    "logo": "{{ site.url }}{% asset_path logos/logo-800x320.jpg %}",
+    "image": "{{ site.url }}{% asset_path logos/og-home.jpg %}",
+    "description": "{{ page.excerpt }}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{% if page.address %}{{ page.address }}{% else %}266 Beechwood Ave, Suite 202{% endif %}",
+      "addressLocality": "{% if page.locality %}{{ page.locality }}{% else %}Ottawa{% endif %}",
+      "addressRegion": "{% if page.region %}{{ page.region }}{% else %}ON{% endif %}",
+      "postalCode": "{% if page.postal %}{{ page.postal }}{% else %}K1L 8A6{% endif %}",
+      "addressCountry": "Canada"
+    },
+    "telephone": "{% if page.phone %}+1{{ page.phone }}{% else %}+1-613-747-9737{% endif %}",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "{% if page.lat %}{{ page.lat }}{% else %}45.444735{% endif %}",
+      "longitude": "{% if page.lng %}{{ page.lng }}{% else %}-75.670058{% endif %}"
+    },
+    "hasMap": "https://www.google.ca/maps/place/F+H+Rowat+Insurance/@{% if page.lat %}{{ page.lat }}{% else %}45.444735{% endif %},{% if page.lng %}{{ page.lng }}{% else %}-75.670058{% endif %},15z/data=!4m5!3m4!1s0x0:0xd2bbd69c9813b791!8m2!3d{% if page.lat %}{{ page.lat }}{% else %}45.444735{% endif %}!4d{% if page.lng %}{{ page.lng }}{% else %}-75.670058{% endif %}",
+    "openingHours": "Mo, Tu, We, Th, Fr {% if page.ref == 'mansfield' %}09:30-16:30{% else %}09:00-17:00{% endif %}",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-613-747-9737",
+      "contactType": "customer support"
+    },
+    "sameAs": [ 
+      "{{ site.data.links.twitter }}",
+      "{{ site.data.links.facebook }}",
+      "{{ site.data.links.google }}"
+    ]
+  }
+</script>

@@ -1,0 +1,152 @@
+.navbar
+  +clearfix
+  z-index: 1000
+  position: absolute
+  left: 0
+  top: 0
+  right: 0
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, .65), transparent 99%)
+  padding: 2px .9325rem 0
+
+  +tablet
+    padding-top: 1.0625rem
+    padding-bottom: 1.0625rem
+
+.logo
+  float: left
+  text-decoration: none
+  display: inline-block
+  width: 120px
+  margin-top: .8125rem
+
+  +tablet
+    width: 160px
+    margin-top: 0
+
+  +desktop
+    width: 180px
+
+.nav
+  height: 100%
+  width: 0
+  position: fixed
+  z-index: 1
+  right: 0
+  top: 0
+  background-color: rgba(35, 47, 56, .92)
+  overflow-x: hidden
+  transition: 0.5s
+
+  &.open
+    width: 100%
+
+  +desktop
+    position: relative
+    width: auto
+    height: auto
+    background-color: transparent
+
+.menu-items
+  position: relative
+  top: 20%
+  width: 100%
+  text-align: center
+
+  +desktop
+    text-align: right
+
+.nav-link
+  padding: .875rem 0
+  display: block
+  text-align: center
+  opacity: 0
+  transition: transform 200ms ease
+  color: $white
+  font-weight: $thin
+  letter-spacing: .1em
+  text-transform: uppercase
+  text-shadow: $text-shadow
+
+  .nav.open &
+    animation: fade-in .7s forwards
+
+    @keyframes fade-in
+      0%
+        opacity: 0
+      100%
+        opacity: 1
+
+  +desktop
+    padding: .625rem 1.25rem
+    opacity: 1
+    display: inline-block
+    font-size: .8125rem
+    opacity: 0
+    animation: nav-appear ease-in 1
+    animation-fill-mode: forwards
+    animation-duration: .6s
+    animation-delay: .3s
+    @keyframes nav-appear
+      from
+        opacity: 0
+      to
+        opacity: 1
+	 
+  &:hover
+    opacity: 0.7
+    color: #fff
+    transform: translate(0px, -2px)
+
+  &.active
+    display: none
+
+.nav-button
+  position: relative
+  float: right
+  font-size: 1.5rem
+  display: none
+  cursor: pointer
+  user-select: none
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  margin-top: .8125rem
+  padding: .6rem 1rem .56rem
+  right: 0px
+  border-radius: 2px
+  transition: background-color 350ms ease, color 350ms ease
+  color: transparentize($white, .2)
+
+  +tablet
+    position: absolute
+    right: .9325rem
+
+  +desktop
+    display: none
+
+  &:hover
+    background-color: transparentize($white, .9)
+    color: $white
+
+.menu-link
+  padding: 0
+  font-family: $font-sans
+  font-size: .8125rem
+  line-height: 1.2rem
+
+.menu-icon 
+  font-size: 1rem
+  padding-left: .3125rem
+
+.close-x
+  display: block
+  width: 3rem
+  height: 3rem
+  font-size: 2.25rem
+  color: $white
+  text-align: center
+  margin: 2rem auto
+
+  +desktop
+    display: none

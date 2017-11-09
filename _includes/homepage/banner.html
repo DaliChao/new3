@@ -1,0 +1,20 @@
+<div class="cta-banner">
+  <div class="container">
+    {% for cta in site.data.lang.c[page.lang] %}
+    <div class="cta-div">
+      <a
+        href="{{ cta[1].url }}"
+        class="button"
+      >
+      {{ cta[1].button }}
+      </a>
+      <span>
+        <span>{{ cta[1].text }}</span>
+        <a class="call" href="tel:+16137479737">
+          (613) 747-9737
+        </a>
+      </span>
+    </div>
+    {% endfor %}
+  </div>
+</div>

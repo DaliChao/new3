@@ -1,0 +1,103 @@
+.blog-thumbnail
+  width: 100%
+  padding-top: 6px
+  padding-bottom: 6px
+
+  +tablet
+    width: 50%
+
+  +desktop
+    width: 33.33%
+
+  +widescreen
+    margin-bottom: 20px
+
+.thumbnail-wrapper
+  position: relative
+  display: block
+  overflow: hidden
+  border-radius: 3px
+  background-color: #fff
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .09)
+  transition: box-shadow 200ms ease, transform 200ms ease
+  text-decoration: none
+
+  &:hover
+    box-shadow: rgba(0, 0, 0, .09) 0px 0px 0px 1px, rgba(0, 0, 0, .09) 0px 2px 23px 0px
+    transform: translate(0px, -3px)
+
+.thumbnail-image
+  display: block
+  width: 100%
+  height: 150px
+  margin-top: 0px
+  margin-bottom: 0px
+  background-color: #d6d6d6
+  background-position: 50% 50%
+  background-size: cover
+  color: #3f8bdd
+
+.category-tag
+  position: absolute
+  left: 10px
+  top: 4px
+  display: inline-block
+  margin-top: 6px
+  margin-right: 6px
+  padding: 6px
+  border-radius: 2px
+  background-color: #5cc489
+  font-family: Oxygen, sans-serif
+  color: #fff
+  font-size: 10px
+  line-height: 10px
+  font-weight: 400
+  text-transform: uppercase
+
+.thumbnail-text
+  position: relative
+  overflow: hidden
+  height: 102px
+  padding: 13px
+  border-top: 1px solid #e5e5e5
+
+.blog-title
+  display: inline-block
+  margin-bottom: 6px
+  color: #101315
+  font-size: 16px
+  line-height: 21px
+  font-weight: 400
+  text-decoration: none
+
+.preview-text
+  overflow: hidden
+  height: 40px
+  font-family: Oxygen, sans-serif
+  color: #7a7a7a
+  font-size: 13px
+  line-height: 19px
+
+.thumb-details
+  +clearfix
+  padding: 6px 13px
+  border-top: 1px solid #efefef
+  background-color: #fcfcfc
+
+.author-img
+  position: static
+  right: 10px
+  bottom: 10px
+  width: 60px
+  margin-top: 5px
+  margin-right: 10px
+  margin-bottom: 0px
+  float: left
+  border-radius: 60px
+
+.thumbnail-date
+  float: right
+  font-family: Oxygen, sans-serif
+  color: #999
+  font-size: 12px
+  line-height: 35px

@@ -1,0 +1,54 @@
+---
+layout: page
+heading: "Blog" ## This page is the blogroll at /blog. Do not mess with this file
+title: "Blog | Rowat Insurance"
+excerpt: "Find updated news articles, tips, tricks, and advice about all things insurance. Read our blog for time- and money-saving tips approved by registered brokers:"
+permalink: /blog/
+lang: English
+ref: blog-index
+---
+
+<div class="main-section">
+  <div class="container">
+    <div class="row">
+      {% assign posts=site.posts | where:"lang", page.lang %}
+      {% for post in posts %}
+        <div class="blog-thumbnail col col-4">
+          <a
+            href="{{ post.url }}"
+            class="thumbnail-wrapper"
+          >
+            <div class="image-wrapper">
+              <img src="{{ post.image }}" class="thumbnail-image">
+              <div
+                style="background-color: {{ site.data.categories[post.category] }};"
+                class="category-tag"
+              >
+                {{ site.data.categories[post.lang][post.category] }}
+              </div>
+            </div>
+            <div class="thumbnail-text">
+              <div class="blog-title">
+                {{ post.title }}
+              </div>
+              <div class="preview-text">
+                {{ post.excerpt }}
+              </div>
+            </div>
+            <div class="thumb-details">
+              <div class="thumbnail-date">
+                {% if page.lang == 'English' %}
+                  {{ post.date | date: "%B %-d, %Y" }}
+                {% endif %}
+                {% if page.lang == 'Français' %}
+                  {{ post.date | date: "%d/%m/%Y" }}
+                {% endif %}
+              </div>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+  

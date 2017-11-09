@@ -1,0 +1,51 @@
+.page-hero
+  height: 250px
+  position: relative
+  padding-top: 125px
+  background-color: $bluegrey
+  text-align: center
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+
+  +tablet
+    height: 300px
+
+  &.blog-index
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(asset_path("dock-lake.jpg"))
+
+  &.quote
+    background-image: url(asset_path("index-hero/mobile.jpg"))
+
+    +tablet
+      background-image: url(asset_path("index-hero/tablet.jpg"))
+
+    +desktop
+      background-image: url(asset_path("index-hero/desktop.jpg"))
+      
+    +widescreen
+      background-image: url(asset_path("index-hero/widescreen.jpg"))
+
+  &.cottage-page
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(asset_path("cottage-insurance.jpg"))
+
+  &.commercial-page
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(asset_path("space-desk-workspace-coworking.jpg"))
+
+  &.claims-page
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(asset_path("following-accident.jpeg"))
+
+  &.ottawa-west
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(asset_path("locations/ottawa-west.jpg"))
+
+  &.ottawa-east
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(asset_path("locations/ottawa-east.jpg"))
+
+  &.gatineau
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(asset_path("locations/gatineau.jpg"))
+
+  &.mansfield
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(asset_path("locations/mansfield.jpg"))
+
+  &.shawville
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(asset_path("locations/shawville.jpg"))

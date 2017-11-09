@@ -1,0 +1,120 @@
+---
+title: "Ottawa Insurance Broker | Rowat Insurance"
+excerpt: "Since 1955, Rowat Insurance has provided Ontario &amp; Quebec with reliable home, auto, business, and life insurance coverage. Get a quote from a registered broker:"
+lang: English
+ref: homepage
+layout: default
+permalink: "/"
+---
+
+{% include header.html %}
+<div class="landing-hero">
+  <picture>
+    <source
+      type="image/webp"
+      media="(max-width: 372px)"
+      srcset="{% asset_path index-hero/mini.webp %} 372w, {% asset_path index-hero/mini-2x.webp %} 744w"
+    >
+    <source
+      type="image/webp"
+      media="(max-width: 768px)"
+      srcset="{% asset_path index-hero/mobile.webp %} 500w, {% asset_path index-hero/mobile-2x.webp %} 1000w"
+    >
+    <source
+      type="image/webp"
+      media="(max-width: 991px)"
+      srcset="{% asset_path index-hero/tablet.webp %} 800w, {% asset_path index-hero/tablet-2x.webp %} 1600w"
+    >
+    <source
+      type="image/webp"
+      media="(max-width: 1384px)"
+      srcset="{% asset_path index-hero/desktop.webp %} 1200w, {% asset_path index-hero/desktop-2x.webp %} 2400w"
+    >
+    <source
+      type="image/webp"
+      srcset="{% asset_path index-hero/widescreen.webp %} 1800w, {% asset_path index-hero/widescreen.webp %} 3600w"
+    >
+    <source
+      type="image/jpg"
+      media="(max-width: 372px)"
+      srcset="{% asset_path index-hero/mini.jpg %} 372w, {% asset_path index-hero/mini-2x.jpg %} 744w"
+    >
+    <source
+      type="image/jpg"
+      media="(max-width: 768px)"
+      srcset="{% asset_path index-hero/mobile.jpg %} 500w, {% asset_path index-hero/mobile-2x.jpg %} 1000w"
+    >
+    <source
+      type="image/jpg"
+      media="(max-width: 991px)"
+      srcset="{% asset_path index-hero/tablet.jpg %} 800w, {% asset_path index-hero/tablet-2x.jpg %} 1600w"
+    >
+    <source
+      type="image/jpg"
+      media="(max-width: 1384px)"
+      srcset="{% asset_path index-hero/desktop.jpg %} 1200w, {% asset_path index-hero/desktop-2x.jpg %} 2400w"
+    >
+    <img
+      srcset="{% asset_path index-hero/widescreen.jpg %} 1800w, {% asset_path index-hero/widescreen-2x.jpg %} 3600w"
+      src="{% asset_path index-hero/widescreen.jpg %}"
+      alt="Assurance Rowat - une maison"
+    >
+  </picture>
+  <div class="hero-content">
+    <div class="container">
+      <h1 class="hero-heading">
+        Insuring Ontario &amp; Quebec since 1955
+      </h1>
+      <div class="hero-subheading">
+        Trust Rowat Insurance Brokers to look after your home, auto, business, and life insurance needs.
+      </div>
+      <a
+        href="/get-a-quote" 
+        class="button w-button"
+      >
+        Get a Quote
+      </a>
+    </div>
+  </div>
+</div>
+{% include homepage/quote-buttons.html %}
+<main class="main-section dark">
+  <div class="container">
+    <h2 class="white">What is a registered insurance broker?</h2>
+    <div class="med-divider white"></div>
+    <div class="row">
+      <div class="col col-4">
+        <div class="card">
+          <blockquote>In Ontario, insurance brokers are governed by the Registered Insurance Brokers Act of Ontario.</blockquote>
+          <p>A registered insurance broker is an independent insurance professional. Brokers sell general insurance including coverage for home, business, automobile, farm, boat, ATV, life, etc.</p>
+        </div>
+      </div>
+      <div class="col col-4">
+        <div class="card">
+          <blockquote>Brokers represent your best interests when negotiating a contract with an insurance provider.</blockquote>
+          <p>Unlike an agent, an insurance broker does not work directly for an insurance company or financial institution. Brokers act as an intermediary between an insurance provider and the client.</p>
+        </div>
+      </div>
+      <div class="col col-4">
+        <div class="card">
+          <blockquote>Insurance brokers can offer several choices from a variety of insurance providers.</blockquote>
+          <p>They are well versed on various insurance products available. They are not affiliated with insurance companies or financial institutions and can offer independent, non-biased advice.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% include homepage/partners.html%}
+{% include homepage/banner.html %}
+<section id="posts" class="main-section">
+  <div class="container">
+    <h2 class="section-title">
+      <a href="/blog">Read our Blog</a>
+    </h2>
+    <div class="med-divider"></div>
+  </div>
+  {% include blog/blog-widget.html %}
+</section>
+{% include footer.html %}
+
+{% include meta/schema/organization.html %}

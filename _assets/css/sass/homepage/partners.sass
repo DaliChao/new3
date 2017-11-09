@@ -1,0 +1,47 @@
+.partner-section
+  padding: 1.875rem 0
+  overflow: hidden
+  background-color: $white
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+  +tablet
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .35), hsla(0, 0%, 100%, .35)), url(asset_path("partners/partners-tablet.jpg"))
+  
+  +desktop
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .35), hsla(0, 0%, 100%, .35)), url(asset_path("partners/partners-desktop.jpg"))
+
+  +widescreen
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .35), hsla(0, 0%, 100%, .35)), url(asset_path("partners/partners-widescreen.jpg"))
+
+.partners-grid
+  display: flex
+  flex-wrap: wrap
+  margin-right: -1rem
+    
+  & > .partners
+    padding: 1rem
+    margin-bottom: 1rem
+    width: calc(50% - 1rem)
+    +tablet
+      margin-right: 1rem
+      width: calc(14.25% - 1rem)
+
+.partners
+  display: flex
+  overflow: hidden
+  height: 80px
+  align-items: center
+  justify-content: center
+  text-align: center
+
+  & img
+    width: 100%
+    max-width: 115px
+
+    
+
+  
+
+

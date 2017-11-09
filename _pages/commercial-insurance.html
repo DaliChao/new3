@@ -1,0 +1,62 @@
+---
+title: "Commercial Insurance in Ottawa | Rowat Insurance"
+excerpt: "Let us help you protect your business so that you can focus on doing what you do best. Compare plans with a quote from our insurance brokers:"
+heading: "Commercial Insurance"
+lang: English
+layout: page
+permalink: /commercial-insurance
+ref: commercial-page
+---
+
+<main class="main-section">
+  <div class="container">
+    <h2 class="section-title">Let us protect your business so that you can keep doing what you do best</h2>
+    <div class="med-divider"></div>
+    <div class="row">
+      <div class="col col-7">
+        <p>Group insurance benefits represent a financial obligation to the plan sponsor while playing an important role, alongside government-sponsored benefit programs, in providing for the well-being of employees and their families. We work with you to find creative and flexible solutions and are committed to ensuring that plan sponsors get the best value for their benefit dollar. As brokers, we represent virtually all insurance suppliers. </p>
+        <p>Types of business insurance offered include Boiler and Machinery, Builder’s Risk, Errors and Omissions (E&amp;O), Business Interruption, Crime, Flood and Earthquake, Commercial General Liability, Professional Liability, Sewer Back Up, Environmental, and Special Event Liability. Please contact us for more information on your specific commercial insurance needs.</p>
+      </div>
+      <div class="col col-5 hidden-mobile">
+        <div>
+          <img
+            src="{% asset_path small-business.jpeg %}" 
+            alt="Small business storefront"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<div class="cta-banner">
+  <div class="container">
+    <div class="cta-div">
+      <a
+        href="{{ site.data.links.email_commercial_en }}"
+        class="button"
+        onclick="ga('send', 'event', { eventCategory: 'email', eventAction: 'click', eventLabel: 'email button on {{ page.ref }} {{ page.lang }}', eventValue: 10});"
+      >
+        Get a Quote
+      </a>
+      <span>
+        <span>or call us </span>
+        <a
+          href="tel:+16137479737"
+          class="call"
+          onclick="ga('send', 'event', { eventCategory: 'phone call', eventAction: 'tap', eventLabel: 'phone number on {{ page.ref }} {{page.lang }}', eventValue: 10});"
+        >
+          (613) 747-9737
+        </a>
+      </span>
+    </div>
+  </div>
+</div>
+<section class="main-section">
+  <div class="container">
+    <h2 class="section-title">
+      <a href="/blog/">Learn more</a>
+    </h2>
+    <div class="med-divider"></div>
+  </div>
+  {% include blog/blog-widget.html %}
+</section>

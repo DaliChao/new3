@@ -1,0 +1,46 @@
+---
+title: "Contact Us | Rowat Insurance"
+excerpt: "Have a question about your insurance coverage? Our brokers are here to help. Find our contact info for emergency claims, emails, and phone calls here:"
+lang: English
+layout: contact
+permalink: /contact-us
+ref: contact-page
+---
+
+<div class="contact-page">
+  <div class="container">
+    <div>
+      <h1 class="hero-heading">
+        We&#x27;re here to help
+      </h1>
+    </div>
+    <div class="flex">
+      <div>
+        <a
+          href="{{ site.data.links.email_general_en }}"
+          class="button"
+          onclick="ga('send', 'event', { eventCategory: 'email', eventAction: 'click', eventLabel: 'email button on contact page {{ page.lang }}', eventValue: 10});"
+        >
+          Email us your insurance questions
+        </a>
+      </div>
+      <div>
+        <span>
+          <span>or call us </span>
+          <a
+            href="tel:+16137479737"
+            class="call"
+            onclick="ga('send', 'event', { eventCategory: 'phone call', eventAction: 'tap', eventLabel: 'phone on contact page {{ page.lang }}', eventValue: 10});"
+          >
+            (613) 747-9737
+          </a>
+        </span>
+      </div>
+    </div>
+    <div class="assistance">
+      <a href="/emergency-claims-assistance">Click here</a>
+       for after-hours emergency claims assistance
+      <div class="med-divider white"></div>
+    </div>
+  </div>
+</div>

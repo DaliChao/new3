@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+{% include header.html %}
+<div style="background-image: url('{{ page.image }}');" class="hero-blog"></div>
+  <div class="main-section">
+    <div class="container">
+      <div class="post-heading">
+        <h1 class="blog-post-title">{{ page.title }}</h1>
+        <time datetime="{{ page.date }}" class="blog-date">
+          {% if page.lang == 'English' %}
+            {{ page.date | date: "%B %-d, %Y" }}
+          {% endif %}
+          {% if page.lang == 'Français' %}
+            {{ page.date | date: "%d/%m/%Y" }}
+          {% endif %}
+        </time>
+        <span
+          class="blog-category"
+          style="color: {{ site.data.categories[page.category] }};"
+        >
+          {{ site.data.categories[page.lang][page.category] }}
+        </span>
+        <div class="full-divide"></div>
+      </div>
+      <article class="blog-post">
+        {{ content }}
+      </article>
+      {% include blog/prev-next.html %}
+    </div>
+  </div>
+  {% include homepage/banner.html %}
+  {% include blog/author-widget.html %}
+</div>
+{% include footer.html %}
+
+{% include meta/schema/blog-post.html %}

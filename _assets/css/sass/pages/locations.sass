@@ -1,0 +1,49 @@
+.location
+  
+  & .button
+    margin-bottom: 1rem
+    
+    +desktop
+      min-width: 320px
+
+.co-ordinates
+  font-size: .8125rem
+  font-family: $font-sans
+
+  div
+    margin-bottom: 30px
+
+  h3
+    margin-top: 0
+    margin-bottom: 0
+    font-size: 1rem
+    font-weight: $font-weight
+    text-transform: none
+  
+  .button
+    width: 100%
+    font-size: 1rem
+
+.map
+  height: 295px
+  border-top-left-radius: $border-radius
+  border-top-right-radius: $border-radius
+  font-family: $font-sans
+
+  +desktop
+    height: 200px
+
+.location-image
+  height: 200px
+  
+  +desktop
+    height: 290px
+    margin-top: 0px
+  
+  +widescreen
+    display: flex
+    overflow: hidden
+    height: 342px
+    align-items: center
+    border-bottom-left-radius: $border-radius
+    border-bottom-right-radius: $border-radius

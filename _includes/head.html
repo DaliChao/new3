@@ -1,0 +1,39 @@
+<head>
+  {% if jekyll.environment == 'production' %}
+  {% include meta/ga-head.html %}
+  {% endif %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  {% if page.title %}
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
+  {% else %}
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:type" content="website">
+  {% endif %}
+  <meta content="{% asset_path logos/og-home.jpg %}" property="og:image">
+  {% if page.date %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  <meta property="article:author" content="{{ site.data.links.facebook }}">
+  {% endif %}
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta content="summary" name="twitter:card">
+  {% css app %}
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <meta name="msvalidate.01" content="F8EEBA2DB473474BC0F4A74631E3FFB5" />
+  {% if page.ref == 'homepage' and page.lang == 'English' and jekyll.environment == 'production' %}
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  {% endif %}
+
+  {% include icons.html %}
+
+  {% if jekyll.environment == 'production' %}
+  {% include meta/facebook-pixel.html %}
+  {% endif %}
+</head>

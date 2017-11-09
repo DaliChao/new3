@@ -1,0 +1,150 @@
+// Section
+.main-section
+  padding: 1rem
+  
+  +tablet
+    padding-right: 1.25rem
+    padding-left: 1.25rem
+
+  +desktop
+    padding: 2.5rem 1.25rem
+
+  &.grey
+    background-color: hsla(0, 0%, 60%, .15)
+
+  &.dark
+    background-color: darken($bluegrey, 15%)
+
+.sidebar
+  padding-right: 10px
+  padding-left: 10px
+  background-color: hsla(0, 0%, 60%, .15)
+
+
+// Container
+.container
+  +clearfix
+  margin: auto
+  padding: 0 .5rem
+
+  +desktop
+    max-width: 940px
+    padding: 0
+
+
+// Row
+.container .row
+
+  +tablet
+    margin-left: 0
+    margin-right: 0
+  
+  +desktop
+    margin-left: -10px
+    margin-right: -10px
+
+.row
+  +clearfix
+
+  +tablet
+    margin-left: 0
+    margin-right: 0
+
+  & .row
+    margin-left: 0
+    margin-right: 0
+
+// Columns
+.col
+  width: 100%
+  float: left
+  min-height: 1px
+  padding-left: 10px
+  padding-right: 10px
+
+  &.col-tiny-5
+    width: 41.66666667%
+
+  &.col-tiny-7
+    width: 58.33333333%
+
+  &.col-small-3
+    +tablet
+      width: 25%
+  
+  &.col-small-4
+    +tablet
+      width: 33.33333333%
+  
+  &.col-small-5
+    +tablet
+      width: 41.66666667%
+  
+  &.col-small-6
+    +tablet
+      width: 50%
+  
+  &.col-small-7
+    +tablet
+      width: 58.33333333%
+  
+  &.col-small-8
+    +tablet
+      width: 66.66666667%
+  
+  &.col-small-9
+    +tablet
+      width: 75%
+
+  & .col
+    +desktop
+      padding-left: 0
+      padding-right: 0
+
+  &.col-1
+    +desktop
+      width: 8.33333333%
+
+  &.col-2
+    +desktop
+      width: 16.66666667%
+
+  &.col-3
+    +desktop
+      width: 25%
+
+  &.col-4
+    +desktop
+      width: 33.33333333%
+
+  &.col-5
+    +desktop
+      width: 41.66666667%
+
+  &.col-6
+    +desktop
+      width: 50%
+
+  &.col-7
+    +desktop
+      width: 58.33333333%
+
+  &.col-8
+    +desktop
+      width: 66.66666667%
+
+  &.col-9
+    +desktop
+      width: 75%
+
+  &.col-10
+    +desktop
+      width: 83.33333333%
+
+  &.col-11
+    +desktop
+      width: 91.66666667%
+
+  &.col-12
+    +desktop
+      width: 100%

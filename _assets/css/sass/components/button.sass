@@ -1,0 +1,47 @@
+.button
+  display: inline-block
+  padding: .8rem 1.25rem
+  font-size: 1.25rem
+  text-align: center
+  border-radius: $border-radius
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .6)
+  transition: width 200ms ease-in-out, height 200ms ease, background-color 200ms ease
+  cursor: pointer
+  font-family: $font-sans
+  color: $white
+  background-color: $yellow
+  font-weight: $font-weight
+  -webkit-font-smoothing: antialiased
+  
+  &:hover
+    background-color: darken($yellow, 10%)
+    color: $white
+
+  &.dark
+    background-color: $bluegrey
+
+    &:hover
+      background-color: darken($bluegrey, 10%)
+
+  &.auto-insurance
+    background-color: #cc0000
+
+    &:hover
+      background-color: darken(#cc0000, 10%)
+
+  &.home-insurance
+    background-color: #378ddd
+
+    &:hover
+      background-color: darken(#378ddd, 10%)
+
+  &.tenant-insurance
+    background-color: #ff6611
+
+    &:hover
+      background-color: darken(#ff6611, 10%)
+
+input[type="button"],
+input.button
+  -webkit-appearance: button
+  cursor: pointer

@@ -1,0 +1,91 @@
+<div class="main-section">
+  <div class="container">
+    <h2 class="section-title">
+      {{ site.data.lang.y[page.lang] }}
+    </h2>
+    <div class="med-divider"></div>
+    <div class="row">
+      <div class="col col-small-6">
+        <a
+          href="{{ site.data.lang.q[page.lang].home.url }}"
+          class="home quote-button lazyload"
+          onclick="ga('send', 'event', { eventCategory: 'webrater', eventAction: 'click', eventLabel: 'webrater property insurance link on {{ page.ref }} {{page.lang }}', eventValue: 10});"
+        >
+          <h3>
+            {{ site.data.lang.q[page.lang].home.text }}
+          </h3>
+        </a>
+      </div>
+      <div class="col col-small-6">
+        <a
+          href="{{ site.data.lang.q[page.lang].auto.url }}"
+          class="auto quote-button lazyload"
+          onclick="ga('send', 'event', { eventCategory: 'webrater', eventAction: 'click', eventLabel: 'webrater auto insurance link on {{ page.ref }} {{page.lang }}', eventValue: 10});"
+        >
+          <h3>
+            {{ site.data.lang.q[page.lang].auto.text }}
+          </h3>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-small-6">
+        <a
+          href="{{ site.data.lang.q[page.lang].cottage.url }}"
+          class="cottage quote-button lazyload"
+        >
+          <h3>
+            {{ site.data.lang.q[page.lang].cottage.text }}
+          </h3>
+        </a>
+      </div>
+      <div class="col col-small-6">
+        <a
+          href="{{ site.data.lang.q[page.lang].commercial.url }}"
+          class="commercial quote-button lazyload"
+        >
+          <h3>
+            {{ site.data.lang.q[page.lang].commercial.text }}
+          </h3>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-small-6">
+        <a
+          href="{{ site.data.lang.q[page.lang].life.url }}"
+          class="life quote-button lazyload" 
+          onclick="ga('send', 'event', { eventCategory: 'boulos link', eventAction: 'click', eventLabel: 'boulos life insurance link on {{ page.ref }} {{page.lang }}', eventValue: 10});"
+        >
+          <h3>
+            {{ site.data.lang.q[page.lang].life.text }}
+          </h3>
+        </a>
+      </div>
+      <div class="col col-small-6">
+        <a
+          href="{{ site.data.lang.q[page.lang].health.url }}"
+          class="health quote-button lazyload" 
+          onclick="ga('send', 'event', { eventCategory: 'boulos link', eventAction: 'click', eventLabel: 'boulos health insurance link on {{ page.ref }} {{page.lang }}', eventValue: 10});"
+        >
+          <h3>
+            {{ site.data.lang.q[page.lang].health.text }}
+          </h3>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-small-6" style="float: none; margin: auto;">
+        <a
+          href="{{ site.data.lang.q[page.lang].retirement.url }}"
+          class="retirement quote-button lazyload" 
+          onclick="ga('send', 'event', { eventCategory: 'boulos link', eventAction: 'click', eventLabel: 'boulos retirement advice link on {{ page.ref }} {{page.lang }}', eventValue: 10});"
+        >
+          <h3>
+            {{ site.data.lang.q[page.lang].retirement.text }}
+          </h3>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,104 @@
+.hero-heading
+  margin-bottom: .875rem
+  color: $white
+  font-size: 1.75rem
+  line-height: 2.5rem
+  font-weight: 400
+  text-transform: none
+  text-shadow: $text-shadow
+  text-align: center
+  
+  +tablet
+    font-size: 1.625rem
+
+  +desktop
+    font-size: 2.375rem
+  
+  +widescreen
+    font-size: 2.625rem
+    line-height: 3.75rem
+
+.hero-subheading
+  display: block
+  color: $white
+  line-height: 1.5rem
+  font-family: $font-sans
+  margin-bottom: 1.875rem
+  font-weight: $thin
+  text-shadow: $text-shadow
+  opacity: 0
+  animation: hero-subheading
+  animation-timing-function: ease-in-out
+  animation-fill-mode: forwards
+  animation-duration: .5s
+  animation-delay: .5s
+  @keyframes hero-subheading
+    from
+      opacity: 0
+      transform: translateY(10px)
+    to
+      opacity: 1
+      transform: translateY(0)
+
+  +desktop
+    line-height: 1.25rem
+
+  +widescreen
+    font-size: 1.25rem
+    line-height: 1.6875rem
+
+.landing-hero
+  position: relative
+  overflow: hidden
+  
+  & .button
+    opacity: 0
+    animation: hero-button
+    animation-timing-function: ease-in-out
+    animation-fill-mode: forwards
+    animation-duration: .6s
+    animation-delay: 1s
+    @keyframes hero-button
+      from
+        opacity: 0
+        transform: scaleX(0.97), scaleY(0.97)
+      to
+        opacity: 1
+        transform: scale(1)
+        
+.hero-content
+  display: block
+  text-align: center
+  position: absolute
+  bottom: 8%
+  left: 0
+  right: 0
+  transform: translate(0,50%,0)
+  will-change: transform
+  +tablet
+    bottom: 25%
+
+  & .flex
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    +desktop
+      display: flex
+      flex-flow: row nowrap
+      justify-content: space-between
+      text-align: left
+
+    & .hero-heading,
+    & .hero-subheading
+      margin-bottom: .8rem
+      +desktop
+        text-align: left
+
+    & .button
+      min-width: 300px
+      max-width: 400px
+
+      +desktop
+        margin-left: 2rem

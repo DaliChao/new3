@@ -1,0 +1,38 @@
+.cta-banner
+  background-color: $black
+  color: $white
+
+  .cta-div
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    height: 12.5rem
+    text-align: center
+
+    +tablet
+      height: 8rem
+      flex-direction: row
+
+    & span
+      margin: .5rem 0 0 0
+      font-size: 1.5625rem
+
+      +tablet
+        margin: 0 0 0 1rem
+
+      & span
+        display: block
+        +tablet
+          display: inline
+
+    & .call
+      font-weight: 700
+      color: $white
+
+  &.landing-page
+    background-color: $white
+    color: $text-color
+
+    & .call
+      color: $text-color

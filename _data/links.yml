@@ -1,0 +1,26 @@
+# Quote links
+webrater_home_en: "https://webrater.appliedsystems.com/WR/Default.aspx?GC=INGFHRI&LOB=PROP&LANG=EN"
+webrater_auto_en: "https://webrater.appliedsystems.com/WR/Default.aspx?GC=INGFHRI&LOB=AUTO&LANG=EN"
+
+webrater_home_fr: "https://webrater.appliedsystems.com/WR/Default.aspx?GC=INGFHRI&LOB=PROP&LANG=FR"
+webrater_auto _fr: "https://webrater.appliedsystems.com/WR/Default.aspx?GC=INGFHRI&LOB=AUTO&LANG=FR"
+
+boulos_life_en: "http://boulos.net/life-insurance-quotes/"
+boulos_health_en: "http://boulos.net/health-insurance-quotes/"
+boulos_retirement_en: "http://boulos.net/retirement-quotes/"
+
+boulos_life_fr: "http://boulos.net/cotations-dassurance-vie/?lang=fr"
+boulos_health_fr: "http://boulos.net/cotations-dassurance-sante/?lang=fr"
+boulos_retirement_fr: "http://boulos.net/cotations-de-retraite/?lang=fr"
+
+# Email
+email_general_en: "mailto:info@fhrowat.com?subject=Inquiry%20from%20Rowat%20Insurance%20website"
+email_commercial_en: "mailto:info@fhrowat.com?subject=Commercial%20Insurance%20Sent%20from%20rowatinsurance.com"
+
+email_general_fr: "mailto:info@fhrowat.com?subject=Question%20soumit%20de%20rowatinsurance.com"
+email_commercial_fr: "mailto:info@fhrowat.com?subject=Assurance%20commerciale%20Soumit%20de%20rowatinsurance.com"
+
+# Social media
+facebook: "https://www.facebook.com/FH-Rowat-Insurance-Brokers-373956806004570/"
+twitter: "https://twitter.com/rowatinsurance"
+google: "https://plus.google.com/100191028525695836269"
